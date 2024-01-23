@@ -7,21 +7,26 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 10px;
 }
 
 /* Stili per la navbar */
 .navbar {
     background-color: #4CAF50;
     overflow: hidden;
+    position: relative;
 }
 
 .nav-list {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 .nav-list li {
-    display: inline;
+    display: inline-block;
     margin-right: 10px;
 }
 
@@ -29,7 +34,7 @@ body {
     text-decoration: none;
     color: white;
     padding: 14px 16px;
-    display: inline-block;
+    display: block;
 }
 
 .nav-list li a img {
@@ -48,10 +53,75 @@ section {
     margin-bottom: 20px;
 }
 
+.faq-question {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #367c39;
+}
+
+.faq-answer {
+    padding: 15px;
+    background-color: #f4f4f4;
+    display: none;
+    border: 1px solid #ddd;
+}
+
 /* Stili per il footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+#hero {
+    background: url('non_sprego.jpg') no-repeat center center/cover;
+    height: 100vh; /* Imposta l'altezza della sezione al 100% dell'altezza del viewport */
+    width: 100%; /* Assicura che la sezione si estenda per tutta la larghezza dello schermo */
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-list li {
+        display: block;
+        text-align: left;
+    }
+
+    .nav-list li a {
+        padding: 10px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-list li {
+        margin-right: 0;
+    }
+
+    .nav-list li a {
+        padding: 10px 5px;
+    }
 }
