@@ -71,7 +71,7 @@ section {
 
 .faq-answer {
     padding: 15px;
-    background-color: #2812f3;
+    background-color: #050316;
     display: none;
     border: 1px solid #854fe9;
 }
@@ -79,7 +79,7 @@ section {
 /* Stili per il footer */
 footer {
     background-color: #0cfaee;
-    color: white;
+    color: rgb(14, 12, 12);
     text-align: center;
     padding: 10px 0;
     position: absolute;
