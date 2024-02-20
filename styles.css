@@ -46,7 +46,7 @@ body {
 /* Stili per il contenuto principale */
 main {
     padding: 20px;
-    background-color: #10a5eb;
+    background-color: #1089eb;
 }
 
 section {
@@ -55,7 +55,7 @@ section {
 
 .faq-question {
     background-color: #0916a7;
-    color: rgb(29, 14, 252);
+    color: rgb(25, 187, 228);
     padding: 10px;
     width: 100%;
     text-align: left;
