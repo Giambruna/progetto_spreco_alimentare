@@ -66,15 +66,27 @@ section {
 }
 
 .faq-question:hover {
-    background-color:#11d9e0;
+    background-color: #11d9e0;
 }
 
 .faq-answer {
     padding: 15px;
     background-color: #2913f3;
-    display: none;
     border: 1px solid #854fe9;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in, opacity 0.3s ease;
+    opacity: 0;
 }
+
+.faq-answer.active {
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.3s ease;
+    /* Imposta un max-height elevato per assicurarti che tutto il contenuto sia visibile quando espanso. */
+    /* Questo valore potrebbe dover essere regolato a seconda del contenuto delle tue FAQ. */
+    max-height: 1000px; 
+}
+
 
 /* Stili per il footer */
 footer {
