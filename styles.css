@@ -54,7 +54,7 @@ section {
 }
 
 .faq-question {
-    background-color: #161a4b;
+    background-color: #0916a7;
     color: rgb(29, 14, 252);
     padding: 10px;
     width: 100%;
@@ -71,7 +71,7 @@ section {
 
 .faq-answer {
     padding: 15px;
-    background-color: #050316;
+    background-color: #2913f3;
     display: none;
     border: 1px solid #854fe9;
 }
