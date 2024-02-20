@@ -23,5 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    alert("JavaScript è abilitato e funzionante!");
+   
 });
